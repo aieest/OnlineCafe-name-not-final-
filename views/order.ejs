@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head') %>
+<body>
+    <%- include('./partials/nav') %>
+    <h1>Order</h1>
+    <div class="menu-list">
+        <% if(menus.length <= 0){%>
+            <p>NO MENUUUUUUU!</p>
+        <% } else { %>
+            <% menus.forEach(menu =>{ %>
+                <h1><%= menu.name %></h1>
+                <% menu.category.forEach(cat =>{%>
+                    <p><%= cat %></p>
+                <% })  %>
+                <p><%= menu.price %></p>
+            <% }) %>
+        <% } %>
+    </div>
+</body>
+</html>
