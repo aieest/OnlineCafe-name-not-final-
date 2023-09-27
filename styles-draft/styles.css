@@ -1,0 +1,86 @@
+:root {
+    --background: #FDF5C9;
+    --primary:#08682A;
+    --secondary: #F3E7A5;
+    --accent: #B93146;
+    --text: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Patrick Hand SC', cursive;
+    /* border: 1px solid black; */
+}
+
+body {
+    background-color: var(--background);
+    display: grid;
+    columns: 1;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: right;
+    margin: 5px;
+
+}
+
+nav ul li {
+    margin: 10px;
+    transition: all 3s ease;
+}
+
+nav ul li:hover {
+    .nav-btn {
+        color: var(--accent);
+    }
+}
+
+.nav-btn {
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--primary);
+}
+
+/* ***HOME SECTION*** */
+section#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#home-img {
+    width: 90vh;
+    height: 90vh;
+}
+
+.home-main {
+    margin: auto;
+    text-align: center;
+    place-self: center;
+}
+
+.home-main h1{
+    width: 50vh;
+    margin: auto;
+    font-size: 110px;
+    color: var(--primary);
+}
+
+.home-main p{
+    font-size: 42px;
+    padding: 20px;
+}
+
+#order-now-btn {
+    background-color: var(--accent);
+    color: var(--background);
+    font-size: 24px;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
