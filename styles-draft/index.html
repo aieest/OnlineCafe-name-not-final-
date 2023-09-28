@@ -10,33 +10,35 @@
     <title>DoKa</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="#home" class="nav-btn active">HOME</a>
-            </li>
-            <li>
-                <a href="#feature" class="nav-btn">FEATURE</a>
-            </li>
-            <li>
-                <a href="#menu" class="nav-btn">MENU</a>
-            </li>
-            <li>
-                <a href="#queue" class="nav-btn">QUEUE</a>
-            </li>
-        </ul>
-    </nav>
+    <!--Image-->
+    <content id="img-container">
+        <img src="/images/refs/coffee and donut.png" alt="Donut and Coffee (icon not final)" id="home-img">
+    </content>
 
-    <!--HOME-->
-    <section id="home">
-        <content id="img-container">
-            <img src="/images/refs/coffee and donut.png" alt="Donut and Coffee (icon not final)" id="home-img">
-        </content>
-        <content class="home-main">
+    <!--Nav and Home-->
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home" class="nav-btn active">HOME</a>
+                </li>
+                <li>
+                    <a href="#feature" class="nav-btn">FEATURE</a>
+                </li>
+                <li>
+                    <a href="#menu" class="nav-btn">MENU</a>
+                </li>
+                <li>
+                    <a href="#queue" class="nav-btn">QUEUE</a>
+                </li>
+            </ul>
+        </nav>
+
+        <content class="home-main" id="home">
             <h1>Doka</h1>
             <p>Where Every Sip and Bite is a Delight!</p>
             <button id="order-now-btn">ORDER NOW!</button>
         </content>
-    </section>
+    </main>
 </body>
 </html>
