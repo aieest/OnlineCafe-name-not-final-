@@ -3,46 +3,53 @@
     --primary: #08682A;
     --secondary: #F3E7A5;
     --accent: #B93146;
-    --text: #000000;
+    --text: #000;
 }
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Patrick Hand SC', cursive;
-    /* border: 1px solid black; */
+    /*
+    border: 1px solid black;
     overflow: hidden;
-}
+    */
+}   
 
 body {
     background-color: var(--background);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+}
+
+#home-img {
+    width: fit-content;
+    height: 100vh;
 }
 
 main {
-    width: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 90vh;
 }
+
 nav {
-    width: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: auto;
+    place-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul {
     display: flex;
-    flex-direction: row;
     list-style: none;
-    justify-content: right;
+    justify-content: space-around;
     margin: 5px;
 }
 
 nav ul li {
-    margin: 10px;
-    transition: all 3s ease;
+    margin: 10px 40px;
+    transition: color 0.3s ease;
 }
 
 .nav-btn {
@@ -55,20 +62,7 @@ nav ul li:hover .nav-btn {
     color: var(--accent);
 }
 
-/* ***HOME SECTION*** */
-section#home {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#home-img {
-    width: 100vh;
-    height: 100vh;
-}
-
 .home-main {
-    margin-top: 20vh;
     text-align: center;
     place-self: center;
     display: grid;
@@ -77,22 +71,31 @@ section#home {
 
 .home-main h1 {
     width: 50vh;
-    margin: auto;
     font-size: 110px;
     color: var(--primary);
+    margin: auto;
 }
 
 .home-main p {
     font-size: 42px;
-    padding: 20px;
+    width: 50vh;
 }
 
 #order-now-btn {
+    margin: 30px auto;
     background-color: var(--accent);
     color: var(--background);
     font-size: 24px;
-    width: 180px;
-    height: 40px;
+    width: 190px;
+    height: 50px;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in;
 }
+
+/*
+#order-now-btn:hover {
+}
+
+*/
